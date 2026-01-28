@@ -40,6 +40,15 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Work -->
+    {% if page.work and page.work.enabled %}
+      <h2>
+        <a href="{{ '/work/' | relative_url }}" style="color: inherit">work</a>
+      </h2>
+      {% include work.liquid limit=true %}
+    {% endif %}
+
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
