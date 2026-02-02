@@ -89,8 +89,11 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h4>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
+        Selected Publications <a href="{{ '/publications/' | relative_url }}">[Full list]</a>
       </h4>
+      (*) denotes equal contribution 
+      <br>
+      <br>
       {% include selected_papers.liquid %}
     {% endif %}
   </article>
