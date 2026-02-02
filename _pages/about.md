@@ -5,7 +5,7 @@ permalink: /
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: jyp.jpg
   image_circular: false # crops the image to make it circular
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -18,7 +18,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -28,4 +28,4 @@ For more details, please see my <a href="https://pjin0.github.io/assets/pdf/CV.p
 
 My research focuses on the intersection of Multimodal LLMs and AI for Science, specifically investigating their potential within Agentic AI frameworks. I am driven by a long-term vision to build collaborative AI partners that not only assist in research but evolve autonomously to accelerate novel scientific discovery.
 
-Feel free to reach out via <a href="mailto:pjin0@kaist.ac.kr">email</a> if you’d like to discuss anything related to me!
+Feel free to reach out via <a href="mailto:jinyoung.park@kaist.ac.kr">email</a> if you’d like to discuss anything related to me!
