@@ -38,8 +38,6 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
-
     <!-- Social -->
     {% if page.social %}
       <div class="social">
@@ -53,12 +51,22 @@ layout: default
       {% include newsletter.liquid center=true %}
     {% endif %}
 
+    <div class="clearfix">{{ content }}</div>
+
     <!-- Work -->
     {% if page.work %}
       <h4>
         Work
       </h4>
       {% include work.liquid %}
+    {% endif %}
+
+    <!-- Award -->
+    {% if page.award %}
+      <h4>
+        Award
+      </h4>
+      {% include award.liquid %}
     {% endif %}
 
 
