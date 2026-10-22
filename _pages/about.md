@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Researcher at KAIST &middot; Agentic AI &middot; AI for Science
+subtitle: Postdoctoral Researcher at KAIST &middot; Agentic AI &middot; Post-Training &middot; AI for Science
 
 profile:
   align: right
