@@ -1,0 +1,13 @@
+# Honors and awards shown on the about page (most recent first).
+# Fields: year, title, org (optional), note (optional)
+- year: 2024
+  title: Google AI Fellowship
+  org: Google
+
+- year: 2023
+  title: KU Achievement Award
+  org: Korea University
+
+- year: 2022
+  title: BK21 KU-Future Talent Fellowship
+  org: Korea University

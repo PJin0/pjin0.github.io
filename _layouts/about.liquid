@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
+<div class="post about">
+  <header class="post-header about-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
@@ -11,7 +11,9 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    {% if page.subtitle %}
+      <p class="desc">{{ page.subtitle }}</p>
+    {% endif %}
   </header>
 
   <article>
@@ -22,11 +24,9 @@ layout: default
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
@@ -51,49 +51,94 @@ layout: default
       {% include newsletter.liquid center=true %}
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix about-intro">
+      {{ content }}
+
+      <!-- Contact links -->
+      {% if page.contact_links %}
+        <div class="contact-row">
+          {% if site.data.socials.email %}
+            <a class="contact-chip" href="mailto:{{ site.data.socials.email }}">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          {% endif %}
+          {% if site.data.socials.cv_pdf %}
+            <a class="contact-chip" href="{{ site.data.socials.cv_pdf | relative_url }}">
+              <i class="fa-solid fa-file-lines"></i>
+              <span>CV</span>
+            </a>
+          {% endif %}
+          {% if site.data.socials.scholar_userid %}
+            <a class="contact-chip" href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">
+              <i class="ai ai-google-scholar"></i>
+              <span>Google Scholar</span>
+            </a>
+          {% endif %}
+          {% if site.data.socials.github_username %}
+            <a class="contact-chip" href="https://github.com/{{ site.data.socials.github_username }}">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          {% endif %}
+          {% if site.data.socials.linkedin_username %}
+            <a class="contact-chip" href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- News -->
+    {% if page.announcements and page.announcements.enabled %}
+      <section class="about-section">
+        <h2 class="section-title">
+          <span>News</span>
+          <a class="section-link" href="{{ '/news/' | relative_url }}">All news <i class="fa-solid fa-arrow-right-long"></i></a>
+        </h2>
+        {% include news.liquid limit=true %}
+      </section>
+    {% endif %}
 
     <!-- Work -->
     {% if page.work %}
-      <h4>
-        Work
-      </h4>
-      {% include work.liquid %}
+      <section class="about-section">
+        <h2 class="section-title"><span>Experience</span></h2>
+        {% include work.liquid %}
+      </section>
     {% endif %}
 
     <!-- Award -->
     {% if page.award %}
-      <h4>
-        Award
-      </h4>
-      {% include award.liquid %}
-    {% endif %}
-
-
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h4>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-      </h4>
-      {% include news.liquid limit=true %}
+      <section class="about-section">
+        <h2 class="section-title"><span>Honors &amp; Awards</span></h2>
+        {% include award.liquid %}
+      </section>
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h4>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
-      </h4>
-      {% include latest_posts.liquid %}
+      <section class="about-section">
+        <h2 class="section-title">
+          <span>Latest Posts</span>
+          <a class="section-link" href="{{ '/blog/' | relative_url }}">All posts <i class="fa-solid fa-arrow-right-long"></i></a>
+        </h2>
+        {% include latest_posts.liquid %}
+      </section>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h4>
-        Selected Publications <a href="{{ '/publications/' | relative_url }}">[Full list]</a>
-      </h4>
-      (*) denotes equal contribution 
-      <br>
-      {% include selected_papers.liquid %}
+      <section class="about-section">
+        <h2 class="section-title">
+          <span>Selected Publications</span>
+          <a class="section-link" href="{{ '/publications/' | relative_url }}">Full list <i class="fa-solid fa-arrow-right-long"></i></a>
+        </h2>
+        <p class="section-note"><sup>*</sup> denotes equal contribution</p>
+        {% include selected_papers.liquid %}
+      </section>
     {% endif %}
   </article>
 </div>

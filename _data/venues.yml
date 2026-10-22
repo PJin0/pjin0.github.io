@@ -1,9 +1,44 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Venue badge colors and links for the publication list (keyed by the `abbr` field in papers.bib).
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#6d3fb3"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ICLR":
+  url: https://iclr.cc/
+  color: "#c2410c"
 
-"Vision":
-  color: "#009f36"
+"ICLR (Oral)":
+  url: https://iclr.cc/
+  color: "#c2410c"
+
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#1d4ed8"
+
+"ECCV":
+  url: https://eccv.ecva.net/
+  color: "#0e7490"
+
+"AAAI":
+  url: https://aaai.org/
+  color: "#047857"
+
+"EMNLP":
+  url: https://aclanthology.org/venues/emnlp/
+  color: "#b91c1c"
+
+"TPAMI":
+  url: https://www.computer.org/csdl/journal/tp
+  color: "#334155"
+
+"InfoScience":
+  url: https://www.sciencedirect.com/journal/information-sciences
+  color: "#475569"
+
+"IEEE Access":
+  url: https://ieeeaccess.ieee.org/
+  color: "#475569"
+
+"Preprint":
+  url: https://arxiv.org/
+  color: "#8a8f98"

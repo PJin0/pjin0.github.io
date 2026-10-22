@@ -32,7 +32,23 @@ $grey-900: #212529;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
-// Theme colors
+// Theme colors (site palette)
+$accent-color: #2457a6 !default; // light-mode accent (deep blue)
+$accent-color-hover: #1a4382 !default;
+$accent-soft-light: rgba(36, 87, 166, 0.08) !default;
+$accent-color-dark: #8ab4f8 !default; // dark-mode accent (soft blue)
+$accent-color-dark-hover: #aecbfa !default;
+$accent-soft-dark: rgba(138, 180, 248, 0.14) !default;
+
+$ink-color: #1f2328 !default; // softer-than-black body text
+$surface-color-light: #f6f7f9 !default;
+$surface-hover-light: #eef1f5 !default;
+
+$bg-dark: #16181d !default;
+$surface-color-dark: #1f232a !default;
+$surface-hover-dark: #262b33 !default;
+$text-dark: #e6e8eb !default;
+$text-muted-dark: #9aa3ad !default;
 
 $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;

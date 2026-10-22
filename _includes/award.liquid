@@ -1,6 +1,17 @@
-<div class="award">
-  2024 Google AI Fellowship Recipient <br>
-  2023 KU (Korea University) Achievement Award <br>
-  2022 BK21 KU-Future Talent Fellowship <br>
-  <br>
-</div>
+<ul class="about-timeline">
+  {% for item in site.data.awards %}
+    <li class="timeline-item">
+      <span class="timeline-date">{{ item.year }}</span>
+      <div class="timeline-body">
+        <span class="timeline-role">{{ item.title }}</span>
+        {% if item.org %}
+          <span class="timeline-sep">&middot;</span>
+          <span class="timeline-org">{{ item.org }}</span>
+        {% endif %}
+        {% if item.note %}
+          <div class="timeline-note">{{ item.note }}</div>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

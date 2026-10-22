@@ -11,6 +11,25 @@
   opacity: 0.95;
 }
 
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .navbar {
+    opacity: 1;
+    background-color: color-mix(in srgb, var(--global-bg-color) 82%, transparent);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    backdrop-filter: saturate(180%) blur(12px);
+  }
+}
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.navbar.navbar-light .navbar-brand.title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
 .navbar .dropdown-menu,
 .btn-group.dropdown .dropdown-menu {
   background-color: var(--global-bg-color);

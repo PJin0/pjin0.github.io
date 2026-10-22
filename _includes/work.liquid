@@ -1,5 +1,21 @@
-<div class="work">
-  <a href="https://www.amazon.science">Amazon</a> - Research Intern (2023) <br>
-  <a href="https://www.amazon.science">Amazon</a> - Research Intern (2022) <br>
-  <br>
-</div>
+<ul class="about-timeline">
+  {% for item in site.data.experience %}
+    <li class="timeline-item">
+      <span class="timeline-date">{{ item.period }}</span>
+      <div class="timeline-body">
+        <span class="timeline-role">{{ item.role }}</span>
+        {% if item.org %}
+          <span class="timeline-sep">&middot;</span>
+          {% if item.url %}
+            <a class="timeline-org" href="{{ item.url }}">{{ item.org }}</a>
+          {% else %}
+            <span class="timeline-org">{{ item.org }}</span>
+          {% endif %}
+        {% endif %}
+        {% if item.note %}
+          <div class="timeline-note">{{ item.note }}</div>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

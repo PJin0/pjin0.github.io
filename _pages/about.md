@@ -2,6 +2,7 @@
 layout: about
 title: about
 permalink: /
+subtitle: Postdoctoral Researcher at KAIST &middot; Agentic AI &middot; AI for Science
 
 profile:
   align: right
@@ -10,6 +11,7 @@ profile:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
+contact_links: true # shows Email / CV / GitHub chips under the intro (from _data/socials.yml)
 work: true
 award: true
 
@@ -25,7 +27,7 @@ latest_posts:
 ---
 
 I am a postdoctoral researcher at <a href="https://mlv.kaist.ac.kr/">KAIST MLV Lab</a> (School of Computing), advised by <a href="https://scholar.google.com/citations?hl=en&user=LfBoJt8AAAAJ&view_op=list_works&sortby=pubdate">Prof. Hyunwoo J. Kim</a>. Previously, I received my Ph.D. in Computer Science and Engineering from <a href="https://www.korea.edu/"> Korea University</a> in 2025. I did internship at <a href="https://www.amazon.com/">Amazon</a> in 2023 and 2024. Additionally, I received Google AI Fellowship in 2024.
-For more details, please see my <a href="https://pjin0.github.io/assets/pdf/CV.pdf">CV</a>.
+For more details, please see my <a href="/assets/pdf/CV.pdf">CV</a>.
 
 My research focuses on the intersection of Multimodal LLMs and AI for Science, specifically investigating their potential within Agentic AI frameworks. I am driven by a long-term vision to build collaborative AI partners that not only assist in research but evolve autonomously to accelerate novel scientific discovery.
 

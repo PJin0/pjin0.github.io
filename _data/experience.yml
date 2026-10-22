@@ -1,0 +1,22 @@
+# Experience shown on the about page (most recent first).
+# Fields: period, role, org, url (optional), note (optional)
+- period: 2025 – Present
+  role: Postdoctoral Researcher
+  org: KAIST MLV Lab
+  url: https://mlv.kaist.ac.kr/
+  note: School of Computing, advised by Prof. Hyunwoo J. Kim
+
+- period: 2023
+  role: Research Intern
+  org: Amazon
+  url: https://www.amazon.science
+
+- period: 2022
+  role: Research Intern
+  org: Amazon
+  url: https://www.amazon.science
+
+- period: 2025
+  role: Ph.D. in Computer Science and Engineering
+  org: Korea University
+  url: https://www.korea.edu/
