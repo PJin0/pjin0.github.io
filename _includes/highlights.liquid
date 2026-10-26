@@ -1,0 +1,23 @@
+<ul class="about-highlights">
+  {% for item in site.data.highlights %}
+    <li>
+      {% if item.url %}
+        <a class="highlight-card" href="{{ item.url }}">
+      {% else %}
+        <div class="highlight-card">
+      {% endif %}
+      <span class="highlight-logo">
+        <img src="{{ '/assets/img/logos/' | append: item.logo | relative_url }}" alt="{{ item.title }} logo" loading="lazy">
+      </span>
+      <span class="highlight-text">
+        <span class="highlight-title">{{ item.title }}</span>
+        <span class="highlight-meta">{{ item.meta }}</span>
+      </span>
+      {% if item.url %}
+        </a>
+      {% else %}
+        </div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

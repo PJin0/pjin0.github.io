@@ -1,0 +1,20 @@
+# Highlight cards shown under the intro on the about page.
+# Fields: logo (file in assets/img/logos/), title, meta, url (optional)
+- logo: kaist.svg
+  title: Postdoctoral Researcher
+  meta: KAIST &middot; 2025 – Present
+  url: https://www.kaist.ac.kr/
+
+- logo: google.svg
+  title: Google AI Fellowship
+  meta: Google &middot; 2024
+
+- logo: amazon.svg
+  title: Research Intern
+  meta: Amazon &middot; 2022, 2023
+  url: https://www.amazon.science
+
+- logo: korea-university.svg
+  title: Ph.D. in Computer Science
+  meta: Korea University &middot; 2025
+  url: https://www.korea.edu/

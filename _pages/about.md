@@ -12,6 +12,7 @@ profile:
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 contact_links: true # shows Email / CV / GitHub chips under the intro (from _data/socials.yml)
+highlights: true # logo cards under the intro (from _data/highlights.yml)
 work: true
 award: true
 

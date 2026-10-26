@@ -2,6 +2,11 @@
   {% for item in site.data.experience %}
     <li class="timeline-item">
       <span class="timeline-date">{{ item.period }}</span>
+      <span class="timeline-logo">
+        {% if item.logo %}
+          <img src="{{ '/assets/img/logos/' | append: item.logo | relative_url }}" alt="{{ item.org }} logo" loading="lazy">
+        {% endif %}
+      </span>
       <div class="timeline-body">
         <span class="timeline-role">{{ item.role }}</span>
         {% if item.org %}

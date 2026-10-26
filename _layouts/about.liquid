@@ -91,6 +91,13 @@ layout: default
       {% endif %}
     </div>
 
+    <!-- Highlights -->
+    {% if page.highlights %}
+      <section class="about-section about-highlights-section">
+        {% include highlights.liquid %}
+      </section>
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <section class="about-section">

@@ -1,23 +1,27 @@
 # Experience shown on the about page (most recent first).
-# Fields: period, role, org, url (optional), note (optional)
+# Fields: period, role, org, url (optional), note (optional), logo (optional, file in assets/img/logos/)
 - period: 2025 – Present
   role: Postdoctoral Researcher
   org: KAIST
+  logo: kaist.svg
   url: https://www.kaist.ac.kr/
   note: School of Computing
 
 - period: 2023
   role: Research Intern
   org: Amazon
+  logo: amazon.svg
   url: https://www.amazon.science
 
 - period: 2022
   role: Research Intern
   org: Amazon
+  logo: amazon.svg
   url: https://www.amazon.science
 
 - period: 2025
   role: Ph.D. in Computer Science and Engineering
   org: Korea University
+  logo: korea-university.svg
   url: https://www.korea.edu/
   note: <a href="https://mlv.kaist.ac.kr/">MLV Lab</a>, advised by Prof. Hyunwoo J. Kim
